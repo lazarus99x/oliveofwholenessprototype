@@ -85,7 +85,7 @@ export default function ContactPage() {
                       </div>
                       <h3 className="text-xl font-semibold text-foreground mb-2">Message Received!</h3>
                       <p className="text-muted-foreground mb-4">
-                        Thank you for reaching out. Please contact us directly at ayimifaithful2014@gmail.com for the
+                        Thank you for reaching out. Please contact us directly at info@olivesofwholeness.org for the
                         fastest response.
                       </p>
                       <Button onClick={() => setIsSubmitted(false)} variant="outline" className="bg-transparent">
@@ -183,10 +183,10 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-foreground">Email</p>
                       <a
-                        href="mailto:ayimifaithful2014@gmail.com"
+                        href="info@olivesofwholeness.org"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        ayimifaithful2014@gmail.com
+                        info@olivesofwholeness.org
                       </a>
                     </div>
                   </div>
@@ -195,7 +195,7 @@ export default function ContactPage() {
                     <Instagram className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Instagram</p>
-                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                      <a href="https://www.instagram.com/olivesofwholeness" className="text-muted-foreground hover:text-primary transition-colors">
                         Follow us for daily encouragement
                       </a>
                     </div>
