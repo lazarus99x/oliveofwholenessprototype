@@ -183,7 +183,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-foreground">Email</p>
                       <a
-                        href="info@olivesofwholeness.org"
+                        href="mailto:info@olivesofwholeness.org"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
                         info@olivesofwholeness.org
