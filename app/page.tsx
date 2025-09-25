@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Heart, BookOpen, Users, Phone, Star, Shield, Compass, Calendar, ArrowRight, Sparkles } from "lucide-react"
+import Script from "next/script";
 
 const samplePosts = [
   {
@@ -35,6 +36,19 @@ const samplePosts = [
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
+            {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-RGDCYJNXRJ"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RGDCYJNXRJ');
+        `}
+      </Script>
       <Navigation />
 
       <section className="relative gradient-warm py-24 overflow-hidden">
