@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import Script from "next/script";
 import {
   Card,
   CardContent,
@@ -90,6 +91,20 @@ export default async function CommunityPage({
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-RGDCYJNXRJ"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RGDCYJNXRJ');
+        `}
+      </Script>
+      
       <Navigation />
 
       {/* Hero Section */}
