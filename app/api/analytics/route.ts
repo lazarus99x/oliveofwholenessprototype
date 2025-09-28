@@ -154,6 +154,7 @@ export async function GET() {
     };
 
     const analyticsData = {
+      error: "Analytics configuration not available",
       pageViews,
       users,
       topPages,
