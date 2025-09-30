@@ -26,8 +26,11 @@ import {
   Globe,
   Smartphone,
   Monitor,
+  LayoutDashboard,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface AnalyticsData {
   pageViews: { date: string; views: number }[];
@@ -116,9 +119,15 @@ export default function AnalyticsDashboard() {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Analytics Dashboard
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground mb-8">
               Track your website performance and user engagement
             </p>
+            <Link href="/admin/dashboard">
+              <Button variant="outline">
+                <LayoutDashboard className="mr-2 h-4 w-4" />
+                Go to Admin Dashboard
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
